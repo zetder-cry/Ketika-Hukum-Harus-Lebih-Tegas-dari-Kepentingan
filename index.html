@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Ketika Hukum Harus Lebih Tegas dari Kepentingan</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #f2f2f2;
+    }
+
+    header {
+      padding: 40px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #1c1c1c, #000);
+      border-bottom: 2px solid #b00020;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.4em;
+      color: #ff3b3b;
+    }
+
+    header p {
+      margin-top: 12px;
+      font-size: 1.1em;
+      color: #ccc;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .statement {
+      font-size: 1.1em;
+      line-height: 1.8;
+      background: #161616;
+      padding: 20px;
+      border-left: 5px solid #b00020;
+      margin-bottom: 40px;
+    }
+
+    /* SLIDER */
+    .slider {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      background: #000;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .slide {
+      min-width: 100%;
+      position: relative;
+    }
+
+    .slide img {
+      width: 100%;
+      display: block;
+      max-height: 750px;
+      object-fit: cover;
+      filter: grayscale(20%);
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0,0.7);
+      padding: 15px;
+      font-size: 0.95em;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    .nav button {
+      background: #b00020;
+      border: none;
+      color: #fff;
+      padding: 10px 18px;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: 0.2s;
+    }
+
+    .nav button:hover {
+      background: #ff3b3b;
+    }
+
+    .section {
+      margin-top: 60px;
+    }
+
+    .section h2 {
+      color: #ff3b3b;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      margin-top: 80px;
+      padding: 30px 20px;
+      text-align: center;
+      background: #000;
+      color: #888;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Ketika Hukum Harus Lebih Tegas dari Kepentingan</h1>
+  <p>
+    Website ini bukan galeri biasa. Ini arsip perlawanan dimana tempat bukti berbicara
+    ketika hukum memilih diam, dan rakyat dipaksa bergerak karena kerugian nyata.
+  </p>
+</header>
+
+<div class="container">
+
+  <div class="statement">
+    <strong>Fakta pahit:</strong>  
+    Di negeri ini, hukum sering keras ke bawah dan lunak ke atas.  
+    Korupsi disebut musuh negara, tapi pelakunya sering diperlakukan seperti tamu kehormatan.
+    Saat keadilan berhenti bekerja, masyarakat tidak punya pilihan selain bergerak sendiri.
+  </div>
+
+  <!-- SLIDER -->
+  <div class="slider">
+    <div class="slides" id="slides">
+
+      <!-- SLIDE 1 -->
+      <div class="slide">
+        <img src="bukti1.jpg" alt="Bukti 1">
+        <div class="caption">
+          Kasus korupsi bernilai miliaran, vonis ringan, potong masa tahanan,
+          seolah kerugian negara bisa dinegosiasikan.
+        </div>
+      </div>
+
+      <!-- SLIDE 2 -->
+      <div class="slide">
+        <img src="bukti2.jpg" alt="Bukti 2">
+        <div class="caption">
+          Rakyat kecil diproses cepat, pejabat besar diproses hati-hati.
+          Inilah wajah hukum yang sudah kehilangan keberanian.
+        </div>
+      </div>
+
+      <!-- SLIDE 3 -->
+      <div class="slide">
+        <img src="bukti3.jpg" alt="Bukti 3">
+        <div class="caption">
+          Aksi masyarakat muncul bukan karena negara adil,
+          tapi karena ketidakadilan sudah terlalu mahal untuk ditoleransi.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="nav">
+    <button onclick="prevSlide()">◀ Sebelumnya</button>
+    <button onclick="nextSlide()">Berikutnya ▶</button>
+  </div>
+
+  <div class="section">
+    <h2>Kenapa Rakyat Bergerak?</h2>
+    <p>
+      Bukan karena heroisme. Tapi karena kebutuhan.  
+      Ketika korupsi merampas pendidikan, kesehatan, dan kesempatan hidup layak,
+      diam bukan lagi pilihan moral melainkan diam adalah bentuk persetujuan.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Tuntutan Moral</h2>
+    <p>
+      Hukum tidak boleh tunduk pada jabatan, uang, atau relasi politik.  
+      Jika hukum masih bisa dinegosiasikan, maka yang runtuh bukan hanya keadilan,
+      tapi legitimasi negara itu sendiri.
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  Dibuat sebagai alat kritik sosial karena keadilan tidak lahir dari kenyamanan,
+  tapi dari keberanian untuk melawan kepentingan.
+</footer>
+
+<script>
+  let currentIndex = 0;
+  const slides = document.getElementById("slides");
+  const totalSlides = slides.children.length;
+
+  function updateSlide() {
+    slides.style.transform = "translateX(" + (-currentIndex * 100) + "%)";
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateSlide();
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    updateSlide();
+  }
+</script>
+
+</body>
+</html>
